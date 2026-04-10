@@ -47,7 +47,7 @@ Cada classe, deverá ter os seguintes status iniciais:
 Todos deverão iniciar com nível 1 e deve subir de nível a cada dois inimigos finalizados. Para cada nível, deve ser 
 acrescido 10 pontos de vida, 2 pontos de ataque e defesa
 O nome de cada um dos personagens deverá ser gerado de forma aleatória utilizando a biblioteca faker, um guia básico
-pode ser visto em: ![Baeldung: Guia do Faker](https://www.baeldung.com/java-faker)
+pode ser visto em: [Baeldung: Guia do Faker](https://www.baeldung.com/java-faker)
 
 * `int atacar()`
   - Consiste em realizar a ação de ataque, buscando o valor de ataque de cada classe e atribuindo dano.
@@ -86,12 +86,12 @@ maior que 10, o dano atribuído deverá ser dobrado. Caso o valor seja igual a 2
 * `void aparecer()`
   - Consiste na chance do personagem inimigo aparecer e ocorrer uma batalha. Caso o personagem escolhido seja um Mago ou um Arqueiro
 o inimigo **sempre** aparecerá, caso seja um Guerreiro, deverá ser escolhido aleatoriamente um número entre 1 e 4 
-onde se o valor for 1, o inimigo aparecerá e ocorrerá uma batalha.
+onde se o valor for 1 ou 2, o inimigo aparecerá e ocorrerá uma batalha.
 
 #### Dungeon
 Para a classe Dungeon, temos as seguintes limitações:
 
-- O atributo size, não pode ser superior a 10 e nem inferior a 8. E não pode jamais ser inferior a 1
+- O atributo size, não pode ser superior a 10 e nem inferior a 8. E só pode ser inferior a 1 caso o chefe final seja derrotado.
 - O atributo local deve ser escolhido aleatoriamente usando a biblioteca faker. 
 - Apenas um Personagem mocinho deve ser escolhido, porém os inimigos **DEVEM** ser mais que 1, onde não pode ser 
 superior a metade do tamanho da dungeon (arredondado para cima).
@@ -142,6 +142,7 @@ O Diagrama UML tem algumas inconsistências, gostaria que os papafigos as identi
 Gostaria que ambos pensassem em melhorias também e que essas melhorias fossem justificadas textualmente.
 
 Boa sorte aos envolvidos,
+
 Divirtam-se.
 
 
